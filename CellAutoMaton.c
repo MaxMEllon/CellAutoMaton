@@ -36,7 +36,7 @@ int main(int argc, char const* argv[])
   // ルール入力
   printf("input:rule "); input_rule();
   // 幅入力
-  // printf("input:change_num"); scanf("%d", &cell_width);
+  printf("input:change_num"); scanf("%d", &cell_width);
   // seed入力
   // iprintf("input:change_num"); nput_seed(cell_width);
   // 出力
@@ -54,6 +54,13 @@ void input_rule()
   // debug_arr(RULE_LENGTH, Rule);
 }
 
+void input_seed(int cell_width)
+{
+  int k;
+  for ( k = 0; k < cell_width; k++ ) {
+    scanf("%1d", &Cell[0][k]);
+  }
+}
 void debug_arr(int length, int x[])
 {
   int k;
