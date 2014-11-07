@@ -20,8 +20,8 @@ int Cell[MAX_CHANGE][MAX_SIZE];
 // functions
 //============================================================
 void input_rule();
-void input_seed(int cell_width);
-void output_tree(int cell_width, int change_num);
+void input_seed();
+void output_tree(int change_num);
 
 // main
 int main(int argc, char const* argv[])
@@ -37,9 +37,9 @@ int main(int argc, char const* argv[])
   // 幅入力
   scanf("%d", &cell_width);
   // seed入力
-  input_seed(cell_width);
+  input_seed();
   // 出力
-  output_tree(cell_width, change_num);
+  output_tree();
 
   return 0;
 }
